@@ -69,16 +69,16 @@ app.post("/form",function(req,res){
             
 })
 
-app.post('/form',async(req,res)=>{
-    try{
-        const registerdata = new data(req.body);
-        const createuser = await registerdata.save();
-        res.status(200).send(createuser)
-      }
-    catch(e){
-        res.status(404).send(e)
-    }
-})
+// app.post('/form',async(req,res)=>{
+//     try{
+//         const registerdata = new data(req.body);
+//         const createuser = await registerdata.save();
+//         res.status(200).send(createuser)
+//       }
+//     catch(e){
+//         res.status(404).send(e)
+//     }
+// })
 
 app.listen(port,()=>{
     console.log(`server is running on ${port}`)
