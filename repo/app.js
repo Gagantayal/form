@@ -56,7 +56,7 @@ app.post("/form",function(req,res){
                 catch(e){
                     res.status(404).send(e)
                 }
-            }
+            }save()
         })
         .catch((e)=>{
             res.status(404).json({
